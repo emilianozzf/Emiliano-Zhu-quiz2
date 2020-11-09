@@ -2,12 +2,16 @@ import React from 'react';
 
 export default class Dice extends React.Component {
 
-    render() {
+    _sum() {
         let sum = 0;
         for (let i = 0; i < this.props.numbers.length; i++) {
             sum += this.props.numbers[i];
         }
-        console.log(this.props.numbers);
+        return sum;
+    }
+
+    render() {
+        let sum = this._sum();
 
         return (
             <div>

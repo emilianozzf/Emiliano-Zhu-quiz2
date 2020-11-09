@@ -47,7 +47,6 @@ export default class MainApp extends React.Component {
                     {this.state.dices.map((dice) => (
                         <Dice number={dice} onClick={() => this._rollDices()}/>
                     ))}
-                    
                 </div>
                 <div>
                     <Sum numbers={this.state.dices}/>
